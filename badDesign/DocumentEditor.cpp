@@ -21,7 +21,7 @@ public:
         for(auto element : documentElements){
             string extension = element.substr(element.size()-4);
             if(element.size() > 4 && ( extension == ".jpg" || extension == ".png" )){
-                result += "[Image: ]" + element + "]" + "\n";
+                result += "[Image: " + element + "]" + "\n";
             } else {
                 result += element + "\n";
             }
